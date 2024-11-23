@@ -1,0 +1,176 @@
+@import url('https://fonts.googleapis.com/css2?family=Exo+2:ital,wght@0,100..900;1,100..900&family=Fira+Sans+Condensed:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&family=M+PLUS+Rounded+1c&family=Mulish:ital,wght@0,200..1000;1,200..1000&family=Playfair+Display:ital,wght@0,400..900;1,400..900&family=Prompt:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&family=Sour+Gummy:ital,wght@0,100..900;1,100..900&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Exo+2:ital,wght@0,100..900;1,100..900&family=Fira+Sans+Condensed:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&family=M+PLUS+Rounded+1c&family=Montserrat:ital,wght@0,100..900;1,100..900&family=Mulish:ital,wght@0,200..1000;1,200..1000&family=Playfair+Display:ital,wght@0,400..900;1,400..900&family=Prompt:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&family=Sour+Gummy:ital,wght@0,100..900;1,100..900&display=swap');
+body, html {
+    margin: 0;
+    padding: 0;
+    height: 100%;
+    overflow-x: hidden;
+    background-color: #F8F6F3;
+    font-family: "Montserrat", sans-serif;
+}
+
+/* Стили для хедера */
+.header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    background-color: #8AB7B7;
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    z-index: 10;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+}
+
+.logo {
+    color: #150B0C;
+    font-size: 24px;
+    font-weight: bold;
+    margin-left: 100px;
+    font-family: "Sour Gummy", sans-serif;
+}
+
+.nav ul {
+    list-style: none;
+    display: flex;
+    margin: 0;
+    padding: 0;
+}
+
+.nav ul li {
+    margin: 0 15px;
+}
+
+.nav ul li a {
+    color: #150B0C;
+    text-decoration: none;
+    font-size: 18px;
+    transition: color 0.3s;
+}
+
+.nav ul li a:hover {
+    color: #F8F6F3;
+}
+
+.profile-icon {
+    font-size: 50px;
+    cursor: pointer;
+    margin-right: 100px;
+}
+
+.profile-icon i {
+    color: #121212;
+    transition: color 0.3s;
+}
+
+.profile-icon i:hover {
+    color: #F8F6F3;
+}
+
+/* Основной раздел */
+.main-section {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+    height: 100%;
+    background-color: #8AB7B7;
+    border-radius:  0 0 100px 100px;
+}
+
+.main-container {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    width: 100%;
+    max-width: 1200px;
+    padding: 30px;
+    background-color: #8AB7B7;
+}
+
+.main-text {
+    color: #fff;
+    max-width: 50%;
+}
+
+.main-text h1 {
+    font-size: 64px;
+    margin: 0 0 50px;
+}
+
+.main-button {
+    display: inline-block;
+    padding: 12px 20px;
+    background-color: #F8F6F3;
+    color: #150B0C;
+    font-size: 18px;
+    text-decoration: none;
+    border-radius: 10px;
+    transition: background-color 0.3s, color 0.3s;
+}
+
+.main-button:hover {
+    background-color: #fff;
+    color: #8AB7B7;
+}
+
+.main-image {
+    max-width: 45%;
+    text-align: center;
+}
+
+.main-image img {
+    max-width: 100%;
+    height: auto;
+}
+
+/* Контейнер быстрого выбора тура */
+.quick-search-container {
+    background-color: #A9DBDB;
+    padding: 20px 30px;
+    margin: 30px auto;
+    border-radius: 15px;
+    width: 90%;
+    max-width: 1200px;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+    text-align: center;
+}
+.quick-search-fields {
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+    gap: 15px;
+    margin-bottom: 20px;
+}
+
+.quick-search-fields input {
+    width: 18%; 
+    padding: 10px;
+    font-size: 16px;
+    border: 1px solid #ccc;
+    border-radius: 10px;
+    outline: none;
+    transition: border-color 0.3s;
+}
+
+.quick-search-fields input:focus {
+    border-color: #8AB7B7;
+}
+
+.search-button {
+    padding: 12px 20px;
+    background-color: #F8F6F3;
+    color: #150B0C;
+    font-size: 18px;
+    font-weight: bold;
+    border: none;
+    border-radius: 10px;
+    cursor: pointer;
+    transition: background-color 0.3s, color 0.3s;
+}
+
+.search-button:hover {
+    background-color: #f0e68c;
+    color: #8AB7B7;
+}
